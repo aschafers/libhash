@@ -1,6 +1,6 @@
 # LIBHASH
 
-La libhash est une librairie écrite en C qui, comme son nom l'indique, permet la création de hash.
+La libhash est une librairie écrite en C, qui comme son nom l'indique, permet la création de hash.
 Elle a pour but l'amélioration d'une recherche traditionnelle en C sur les listes qui généralement 
 consistent à itérer sur chaque élément et comparer un champ avec notre recherche.
 Ce qui, sur de grosses listes, prend un temp fou.
@@ -48,7 +48,7 @@ Conclusion, le choix de l'algorithme est important pour limiter le nombre de col
 ## Ma solution
 
 Je vous propose, à l'aide des fonctions ci-dessous une totale abstraction de ces problématiques, mis à part la taille du tableau
-qui devra être choisi avec soin selon vos besoins (il est évident que partir sur un tableau au moins aussi grand que le nombre d'insertions est vivement conseillé).
+qui devra être choisie avec soin selon vos besoins (il est évident que partir sur un tableau au moins aussi grand que le nombre d'insertions est vivement conseillé).
 
 ### t_hash
 
@@ -153,7 +153,7 @@ mon_chat = h_get_value_by_key(mon_hash, "chat");
 ```
 
 ## Modifier ou créer une paire clef/valeur
-Cette fontion modifie un élément s'il existe grâce à sa clef ou le créer si aucun élément n'est touvé.
+Cette fontion modifie un élément s'il existe grâce à sa clef ou le cré si aucun élément n'est touvé.
 Renvoie l'elem créé.
 #### Prototype
 ```
@@ -166,7 +166,7 @@ t_elem chient = h_set_or_create_elem(mon_hash, "chien", "choubi");
 ## Transformer une chaîne de caractères en une paire clef/valeur
 Fonction très utile qui permet de créer un elem à partir d'une simple chaîne et d'un séparateur.
 
-example: 
+exemple: 
 
 str = "PATH=$PATH:/usr/bin"
 c = '='
@@ -195,7 +195,7 @@ void						h_print(t_hash *hash, int opts);
 h_print(mon_hash, VAL_OK|NUM_OK|LEN_OK);
 ```
 ## Création d'un tableau à partir d'un hash
-Tout est dans le titre simple copie d'un hash sous la forme d'un tableau.
+Tout est dans le titre, simple copie d'un hash sous la forme d'un tableau.
 
 #### Prototype
 ```
